@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FideFlights</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: darkblue; /* Color azul */
+            color: white; /* Texto en color blanco */
+            padding: 10px; /* Espaciado interno del encabezado */
+            display: flex; /* Flexbox para diseño flexible */
+            justify-content: space-between; /* Distribuir el espacio entre elementos */
+            align-items: center; /* Centrar verticalmente los elementos */
+        }
+
+        #titulo {
+            text-align: left;
+        }
+
+        #subtitulo {
+            text-align: right;
+        }
+
+        #subtitulo a {
+            color: white; /* Color del hipervínculo */
+            text-decoration: none; /* Sin subrayado en el hipervínculo */
+            margin-left: 20px; /* Espaciado entre los hipervínculos */
+            transition: color  0.3s; /* Transición de color al pasar el cursor */
+            font-size: 22px; 
+        }
+
+        #subtitulo a:hover {
+            color: #ffd700; /* Cambiar a amarillo al pasar el cursor */
+        }
+
+        /* Agregar estilo para el contenedor del video */
+        #video-container {
+            border: 5px solid yellow; /* Borde amarillo alrededor del contenedor */
+            margin: 20px; /* Márgenes para separar el video del resto del contenido */
+            display: inline-block; /* Mostrar como bloque en línea para ajustarse al tamaño del contenido */
+        }
+
+        /* Agregar estilo para el título del video */
+        #video-title {
+            text-align: center; /* Centrar el texto */
+            font-size: 24px; /* Tamaño de la fuente */
+            margin-bottom: 10px; /* Márgenes para separar el título del video */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">FideFlights</h1>
+        <div id="subtitulo">
+            <a href="index.html">Vuelos</a>
+            <a href="index.html">Reservas</a>
+            <a href="index.html">Pre Reservas</a>
+        </div>
+    </header>
+
+    <!-- Título del video -->
+    <h2 id="video-title">Viaja con nosotros</h2>
+    
+    <!-- Contenedor del video con borde amarillo -->
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UmxYjRMK-Hw?si=idW9hDepO3mq1n-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    
+</body>
+</html>
